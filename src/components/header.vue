@@ -38,7 +38,7 @@ header {
   .logo {
     width: 50px;
     height: 50px;
-    background-color: red;
+    background-color: blue;
   }
   .item-wrapper {
     display: flex;

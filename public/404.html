@@ -9,10 +9,10 @@
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
+  <script>
+    sessionStorage.redirect = location.href;
+  </script>
 </head>
-<script>
-  sessionStorage.redirect = location.href;
-</script>
 <meta http-equiv="refresh" content="0;URL='/jexyeh'">
 </meta>
 
