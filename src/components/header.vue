@@ -1,6 +1,7 @@
 <template lang="pug">
 header
-  img.logo
+  router-link.logo(:to="{ name: 'home' }")
+    img
   .item-wrapper
     p work
     p about
@@ -38,7 +39,7 @@ header {
   .logo {
     width: 50px;
     height: 50px;
-    background-color: blue;
+    background-color: red;
   }
   .item-wrapper {
     display: flex;

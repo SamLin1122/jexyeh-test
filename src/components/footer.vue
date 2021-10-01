@@ -1,7 +1,7 @@
 <template lang="pug">
 footer
   p c 2021 Copyright By 
-  p.underline Jex Yeh
+  router-link(:to='{ name: "test" }') Jex Yeh
   img(v-for='n in 4', alt="Vue logo", src="../assets/logo.png")
 </template>
 

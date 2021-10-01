@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "gh-pages-deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -19,13 +20,17 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
+    "chalk": "^4.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
+    "execa": "^4.0.0",
     "gh-pages": "^3.2.3",
+    "node-emoji": "^1.10.0",
     "node-sass": "^6.0.1",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.1.0",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "vue-cli-plugin-gh-pages-auto-deploy": "~0.4.0"
   },
   "eslintConfig": {
     "root": true,

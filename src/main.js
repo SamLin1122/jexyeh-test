@@ -6,7 +6,8 @@ import './style/global.scss'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/home', component: require('./home.vue').default }
+    { path: '/', name: 'home', component: require('./home.vue').default },
+    { path: '/test', name: 'test', component: require('./test.vue').default },
   ]
 })
 const app = createApp(App)
