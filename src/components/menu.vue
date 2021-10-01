@@ -18,10 +18,10 @@ export default {
         { name: "Contact", url: "" },
       ],
       socialList: [
-        { img: "../assets/logo.png", url: "" },
-        { img: "../assets/logo.png", url: "" },
-        { img: "../assets/logo.png", url: "" },
-        { img: "../assets/logo.png", url: "" },
+        { img: require("../assets/logo.png"), url: "" },
+        { img: require("../assets/logo.png"), url: "" },
+        { img: require("../assets/logo.png"), url: "" },
+        { img: require("../assets/logo.png"), url: "" },
       ],
     };
   },
@@ -49,6 +49,11 @@ export default {
   }
   .item {
     color: white;
+  }
+  .social-wrapper img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
   }
 }
 </style>
