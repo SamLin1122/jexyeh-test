@@ -1,10 +1,16 @@
 runtime: nodejs10
+
 handlers:
-  # Serve all static files with urls ending with a file extension
-  - url: /(.*\..+)$
-    static_files: dist/\1
-    upload: dist/(.*\..+)$
-    # catch all handler to index.html
-  - url: /.*
-    static_files: dist/index.html
-    upload: dist/index.html
+- url: /
+  static_files: docs/.vuepress/dist/index.html
+  upload: docs/.vuepress/dist/index.html
+  
+- url: /assets/
+  static_dir: docs/.vuepress/dist/assets
+
+- url: /(.+?)/?$
+  static_files: docs/.vuepress/dist/\1/index.html
+  upload: docs/.vuepress/dist/(.+?)/$index.html
+  
+- url: /
+  static_dir: docs/.vuepress/dist
